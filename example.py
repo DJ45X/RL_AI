@@ -30,7 +30,8 @@ def build_rocketsim_env():
     from rlgym_sim.utils.obs_builders import DefaultObs
     from rlgym_sim.utils.terminal_conditions.common_conditions import NoTouchTimeoutCondition, GoalScoredCondition
     from rlgym_sim.utils import common_values
-    from rlgym_sim.utils.action_parsers import ContinuousAction
+    # from rlgym_sim.utils.action_parsers import ContinuousAction
+    from rlgym_sim.utils.action_parsers import LookupAction
 
     spawn_opponents = True
     team_size = 1
@@ -39,7 +40,7 @@ def build_rocketsim_env():
     timeout_seconds = 10
     timeout_ticks = int(round(timeout_seconds * game_tick_rate / tick_skip))
 
-    action_parser = ContinuousAction()
+    action_parser = LookupAction()
     terminal_conditions = [NoTouchTimeoutCondition(timeout_ticks), GoalScoredCondition()]
 
     rewards_to_combine = (VelocityPlayerToBallReward(),
@@ -77,18 +78,25 @@ if __name__ == "__main__":
     min_inference_size = max(1, int(round(n_proc * 0.9)))
 
     learner = Learner(build_rocketsim_env,
+                      render=False, # Set to True to view realtime simulation
+                      render_delay=8/120,
                       n_proc=n_proc,
                       min_inference_size=min_inference_size,
                       metrics_logger=metrics_logger,
                       ppo_batch_size=50000,
                       ts_per_iteration=50000,
                       exp_buffer_size=150000,
-                      ppo_minibatch_size=50000,
-                      ppo_ent_coef=0.001,
-                      ppo_epochs=1,
+                      ppo_minibatch_size=25000,
+                      ppo_ent_coef=0.01,
+                      ppo_epochs=2,
                       standardize_returns=True,
                       standardize_obs=False,
                       save_every_ts=100_000,
                       timestep_limit=1_000_000_000,
-                      log_to_wandb=True)
+                      log_to_wandb=True,
+                      policy_layer_sizes=(2048, 2048, 1024, 1024),
+                      critic_layer_sizes=(2048, 2048, 1024, 1024),
+                      policy_lr=2e-4,
+                      critic_lr=2e-4
+    ),
     learner.learn()

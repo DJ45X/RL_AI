@@ -1,0 +1,16 @@
+{"time":"2024-12-11T17:26:24.8367875-06:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-11T17:26:24.8367875-06:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\DJ45X\\Documents\\GitHub\\RL_AI\\wandb\\run-20241211_172624-xkbogjy7\\logs\\debug-core.log"}
+{"time":"2024-12-11T17:26:25.0766505-06:00","level":"INFO","msg":"created new stream","id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:25.0766505-06:00","level":"INFO","msg":"stream: started","id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:25.0766505-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:25.0766505-06:00","level":"INFO","msg":"sender: started","stream_id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:25.0766505-06:00","level":"INFO","msg":"handler: started","stream_id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:25.4878369-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-11T17:26:26.0672304-06:00","level":"INFO","msg":"stream: closing","id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:26.0672304-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-11T17:26:26.0677473-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-11T17:26:26.7539235-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-11T17:26:27.0149925-06:00","level":"INFO","msg":"handler: closed","stream_id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:27.0149925-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:27.0149925-06:00","level":"INFO","msg":"sender: closed","stream_id":"xkbogjy7"}
+{"time":"2024-12-11T17:26:27.0149925-06:00","level":"INFO","msg":"stream: closed","id":"xkbogjy7"}

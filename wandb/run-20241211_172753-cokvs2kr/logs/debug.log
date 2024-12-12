@@ -1,0 +1,29 @@
+2024-12-11 17:27:53,819 INFO    MainThread:9208 [wandb_setup.py:_flush():68] Current SDK version is 0.19.0
+2024-12-11 17:27:53,819 INFO    MainThread:9208 [wandb_setup.py:_flush():68] Configure stats pid to 9208
+2024-12-11 17:27:53,819 INFO    MainThread:9208 [wandb_setup.py:_flush():68] Loading settings from C:\Users\DJ45X\.config\wandb\settings
+2024-12-11 17:27:53,819 INFO    MainThread:9208 [wandb_setup.py:_flush():68] Loading settings from C:\Users\DJ45X\Documents\GitHub\RL_AI\wandb\settings
+2024-12-11 17:27:53,819 INFO    MainThread:9208 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2024-12-11 17:27:53,820 INFO    MainThread:9208 [wandb_init.py:_log_setup():528] Logging user logs to C:\Users\DJ45X\Documents\GitHub\RL_AI\wandb\run-20241211_172753-cokvs2kr\logs\debug.log
+2024-12-11 17:27:53,820 INFO    MainThread:9208 [wandb_init.py:_log_setup():529] Logging internal logs to C:\Users\DJ45X\Documents\GitHub\RL_AI\wandb\run-20241211_172753-cokvs2kr\logs\debug-internal.log
+2024-12-11 17:27:53,820 INFO    MainThread:9208 [wandb_init.py:init():639] calling init triggers
+2024-12-11 17:27:53,820 INFO    MainThread:9208 [wandb_init.py:init():645] wandb.init called with sweep_config: {}
+config: {'n_proc': 32, 'min_inference_size': 29, 'timestep_limit': 1000000000, 'exp_buffer_size': 150000, 'ts_per_iteration': 50000, 'standardize_returns': True, 'standardize_obs': False, 'policy_layer_sizes': (2048, 2048, 1024, 1024), 'critic_layer_sizes': (2048, 2048, 1024, 1024), 'ppo_epochs': 2, 'ppo_batch_size': 50000, 'ppo_minibatch_size': 25000, 'ppo_ent_coef': 0.01, 'ppo_clip_range': 0.2, 'gae_lambda': 0.95, 'gae_gamma': 0.99, 'policy_lr': 0.0002, 'critic_lr': 0.0002, 'shm_buffer_size': 8192}
+2024-12-11 17:27:53,820 INFO    MainThread:9208 [wandb_init.py:init():688] starting backend
+2024-12-11 17:27:53,820 INFO    MainThread:9208 [wandb_init.py:init():692] sending inform_init request
+2024-12-11 17:27:53,830 INFO    MainThread:9208 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2024-12-11 17:27:53,830 INFO    MainThread:9208 [wandb_init.py:init():705] backend started and connected
+2024-12-11 17:27:53,831 INFO    MainThread:9208 [wandb_init.py:init():798] updated telemetry
+2024-12-11 17:27:53,966 INFO    MainThread:9208 [wandb_init.py:init():830] communicating run to backend with 90.0 second timeout
+2024-12-11 17:27:54,266 INFO    MainThread:9208 [wandb_init.py:init():882] starting run threads in backend
+2024-12-11 17:27:54,324 INFO    MainThread:9208 [wandb_run.py:_console_start():2443] atexit reg
+2024-12-11 17:27:54,324 INFO    MainThread:9208 [wandb_run.py:_redirect():2293] redirect: wrap_raw
+2024-12-11 17:27:54,324 INFO    MainThread:9208 [wandb_run.py:_redirect():2358] Wrapping output streams.
+2024-12-11 17:27:54,324 INFO    MainThread:9208 [wandb_run.py:_redirect():2383] Redirects installed.
+2024-12-11 17:27:54,326 INFO    MainThread:9208 [wandb_init.py:init():925] run started, returning control to user process
+2024-12-11 20:22:53,862 INFO    MainThread:9208 [wandb_run.py:_finish():2169] finishing run dj45x-rocket-underground/rlgym-ppo/cokvs2kr
+2024-12-11 20:22:53,862 INFO    MainThread:9208 [wandb_run.py:_atexit_cleanup():2408] got exitcode: 0
+2024-12-11 20:22:53,862 INFO    MainThread:9208 [wandb_run.py:_restore():2390] restore
+2024-12-11 20:22:53,863 INFO    MainThread:9208 [wandb_run.py:_restore():2396] restore done
+2024-12-11 20:22:57,726 INFO    MainThread:9208 [wandb_run.py:_footer_history_summary_info():3951] rendering history
+2024-12-11 20:22:57,727 INFO    MainThread:9208 [wandb_run.py:_footer_history_summary_info():3983] rendering summary
+2024-12-11 20:22:57,737 INFO    MainThread:9208 [wandb_run.py:_footer_sync_info():3912] logging synced files

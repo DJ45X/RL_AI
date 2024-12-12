@@ -1,0 +1,6 @@
+Created new wandb run! xkbogjy7
+Learner successfully initialized!
+Traceback (most recent call last):
+  File "C:\Users\DJ45X\Documents\GitHub\RL_AI\example.py", line 102, in <module>
+    learner.learn()
+AttributeError: 'tuple' object has no attribute 'learn'
